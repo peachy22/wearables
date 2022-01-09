@@ -1,10 +1,11 @@
-.packages = c("tidyr", "dplyr")
+.packages = c("tidyr","dplyr","reshape2")
 .inst <- .packages %in% installed.packages()
 if(length(.packages[!.inst]) > 0) install.packages(.packages[!.inst])
 lapply(.packages, require, character.only=TRUE)
 
 library('dplyr')
 library('tidyr')
+library('reshape2')
 
 fileURL<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileURL,destfile="./data.zip",method="curl")
