@@ -8,6 +8,4 @@ The script first checks to see if tidyr, dplyr, and reshape2 are installed. If a
 
 The raw, untidy data (from the second URL above) is downloaded then unzipped into your working directory. 
 
-The core data from the raw folder is separated into "testing" and "training" category folders. Both folders conatin a "Y" text file and an "X" text file: 
-
-Each recorded activity has a numeric label whose description is given in activities.txt. 561 measurement types are described in features.txt and these correspond to the columns for X_test and X_train.
+The core data from the raw folder is separated into "testing" and "training" category folders. Both folders contain a "Y" file, an "X" file, and a "subjects" file. The "Y" file contains a numeric label for the kind of activity being leasured for (1 - Walking,etc). The "subjects" file contains an id number for the participant during this observation. The "X" file contains 561 column vectors and the same number of rows as both of the previous files; each vector is a measurement type. In total, there are 
