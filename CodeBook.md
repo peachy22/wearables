@@ -5,7 +5,7 @@ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ort
 
 This R script cleans the above data into a four-column format which gives the average value, per subject id and activity, for measurements originally flagged as being mean or standard deviation entries. 
 
-The script returns two data R frames, 1) XYsub and 2) tidy_avg. 
+The script returns two data R frames, 1) XYsub and 2) tidy_avg. tidy_avg is also written as a .txt file to your working directory.
 
 1) XYsub represents wide data collected into a single frame from multiple files across two category folders within the original .zip files. It is so named because the data originaly consisted of separate "X" "Y" and "subject" .txt files. The first task in the script was to combine the two categories and three data sets each into a single data frame with descriptive labels. XYsub contains the following 563 columns:
 
