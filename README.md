@@ -16,7 +16,7 @@ For 33, all three data frames are joined together to create a large combined fra
 
 Lines 35-37 are concerned primarily with using melt() to reshape the data into a 4-column structure which gives a subject id, activity, a mean or standard deviation-type measurement label, and the value. 38 and 39 create a tidy data frame with appropriate labels that averages out the values for each identical combination of subject, activity, and measurement type. The resulting frame is loaded into the variable "tidy_avg" and sorted so that one measurement for each activity by each subject is displayed. The tidy_avg table explicitly explains the definition of each observation: the subject, what they were doing, and what the average measurement was. 
 
-The final line clears out the intermediate variables involved in constructing the two aforementioned data frames. 
+The final lines clear out the intermediate variables involved in constructing the two aforementioned data frames, and write tidy_avg to a text file in your working directory.
 
 
 
